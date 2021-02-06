@@ -1,0 +1,365 @@
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Personal Default Styling */
+
+*{
+    font-family: "poppins", "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-size: 14px !important;
+}
+
+.dColor{
+    color:  #00aeff !important;
+}
+
+/* Overriding Bootstrap default styling */
+
+.myBackground{
+    background-color: #00aeff !important;
+}
+
+.navbar-brand
+{
+flex: 4;
+margin: auto !important;
+display: flex;
+justify-content: space-between;
+}
+
+.nav-item, .navbar-brand{
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.navbar-brand{
+    font-style: bolder;
+    font-size: 1.5rem;
+    font-family: "poppins", cursive;
+}
+
+.form-control{
+border: 2px solid  #00aeff !important;
+}
+
+
+/* header section */
+
+.banner{
+    position: relative;
+}
+
+.bannerImage img{
+    width: 100%;
+    height: 350px;
+      filter: blur(50%);
+}
+
+.bannerText{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bannerText h1{
+    font-size: 55px !important;
+    text-shadow: 3px 3px rgba(0,0,0,1.5);
+}
+
+.bannerText p{
+    text-shadow: 1px 1px rgba(0,0,0,1.5); 
+}
+
+
+.formContainer{
+    position: absolute;
+    text-align: center;
+    top: 102%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+#formContainer.fixed{
+    top: 0 !important;
+    transform: translate(-50%, -5%);
+    position: fixed !important;
+    transition: .2s ease;
+    margin-top: 0 !important;
+    z-index: 10000;
+}
+
+input[type=submit], input[type=text], .select option{
+    width: 100% !important;
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+
+/* search button */
+
+.btnBook{
+    padding: .375rem 1.05rem !important;
+}
+
+.btnBook:hover{
+    background-color: #25b4ce !important;
+   }
+
+
+/* mobile viewport */
+
+@media(max-width: 800px){
+
+     input[type=submit], input[type=text], .select {
+        width: 100% !important;
+        box-sizing: border-box;
+        outline: none !important;
+    }
+
+    .select{
+        width: 100% !important;
+        box-sizing: border-box;
+        }
+
+    .formContainer{
+        position: absolute;
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center;
+        top: 113%;
+    }
+
+    .roomText{
+        padding: 30px 50px !important;
+      }
+
+        select{
+            padding: 0 10px !important;
+           margin-top: 0 !important;
+        }
+
+        .roomText h4 {
+         font-size: 25px !important;
+        }
+
+        .bannerText h1{
+            font-size: 40px !important;
+        }
+
+}
+
+
+/* main body */
+
+.imgPoster img{
+    width: 100% !important;
+    height: 250px;
+}
+
+.roomPoster img{
+    width: 100% !important;
+}
+
+.marginTop{
+    margin-top: 150px;
+}
+
+
+/* icons */
+
+.fab, .fas{
+    font-size: 2.5rem;
+}
+
+
+
+/* rooms showcase */
+
+/* room one */
+
+.room1{
+    background-image: url("../images/room\ 1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px !important;
+    align-items: center;
+     
+}
+
+.roomText{
+    padding: 0 25px;
+  }
+
+.room1 img, .room2 img, .room3 img{
+    width: 100%;
+    height: 350px;
+      filter: blur(50%);
+}
+
+.roomText h4{
+    font-size: 55px;
+    text-shadow: 2px 2px rgba(0,0,0,1.2);
+}
+
+.roomText p{
+    text-shadow: 1px 1px rgba(0,0,0,1.3); 
+}
+/* End of room one */
+
+
+
+/* room Two */
+
+.room2{
+    background-image: url("../images/room\ 2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px !important;
+    align-items: center;
+}
+
+/* room three */
+.room3{
+    background-image: url("../images/room\ 3.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px !important;
+    align-items: center;
+}
+
+/* room Four */
+.room4{
+    background-image: url("../images/room5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px !important;
+    align-items: center;
+}
+
+/* room Four */
+.room5{
+    background-image: url("../images/room 6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px !important;
+    align-items: center;
+}
+
+
+/* parallax */
+
+.parallax {
+
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 0;
+}
+
+
+.awe-parallax{
+        background-image: url("../images/parallax.jpg");
+        padding: 150px 0;
+}
+
+.parallax2 {
+
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 0;
+}
+
+
+.awe-parallax2{
+        background-image: url("../images/game\ room.png");
+        padding: 150px 0;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+
+}
+
+
+.footer{
+    background-color: #00aeff !important;
+    color: white !important;
+}
+
+.textWhite{
+    opacity: 0.8;
+}
+
+
+/* Rooms & Suites Page*/
+
+ul{
+    padding-inline-start: 20px !important;
+}
+
+.myTransparent {
+    position: relative;
+    left: 0;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: .8;
+    z-index: 1;
+    border-radius: 0 10px 10px 0;
+
+  }
+
+@media (max-width: 600px){
+
+    .roomText{
+       padding: 0 20px !important;
+      }
+
+}
+
+.footer ul{
+    padding-inline-start: 0 !important;
+  }
+
+  .modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: center !important;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+
+.modal-footer {
+    justify-content: center !important;
+}
